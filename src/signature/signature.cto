@@ -30,7 +30,7 @@ transaction ContractSigned extends Request {
  * An abstract clause for a party scoped signature block
  */
 abstract asset SignatureBlock extends AccordClause {
-    @PdfStyle("background")
-    @ContractEditor("readOnly")
+    @Pdf("style", "background")
+    @ContractEditor("readOnly", true, "opacity", 0)
   --> AccordParty signatory
 }
